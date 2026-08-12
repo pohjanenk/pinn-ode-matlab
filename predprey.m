@@ -22,10 +22,6 @@ tauData = 2*tData/T - 1;
 xData = Z(:,1);
 yData = Z(:,2);
 
-%plot(tspan,xData,'b')
-%hold on
-%plot(tspan,yData,'r')
-
 % Scaling factors
 xScale = max(xData);
 yScale = max(yData);
@@ -128,12 +124,6 @@ while epoch < numEpochs  && ~monitor.Stop
     epoch = epoch + 1; 
 
     iteration = iteration + 1;
-
-    %if epoch < 5000
-   %     wData = 5;
-   % else
-   %     wData = 1;
-   % end
 
     % Evaluate the model gradients and loss using dlfeval and the modelLoss function
     [loss,physicsLoss,dataLoss,gradients] = dlfeval(accFcn,...

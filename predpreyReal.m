@@ -152,12 +152,6 @@ while epoch < numEpochs  && ~monitor.Stop
 
     iteration = iteration + 1;
 
-    %if epoch < 15000
-   %     wData = 5;
-   % else
-   %     wData = 1;
-   % end
-
     % Evaluate the model gradients and loss using dlfeval and the modelLoss function
     [loss,physicsLoss,dataLoss,gradientB,gradientG,gradientsNet]...
         = dlfeval(accFcn,net, tauTrain, tauData,xData,yData,...
