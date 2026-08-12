@@ -1,2 +1,0 @@
-hard and softPendulum are PINNs using data and physics to solve the forward problem for the pendulum.
-inverse2parameter is for an inverse problem finding two constants in the pendulum equation, inverse3 is finding the same two constants plus the constant of the initial velocity of the pendulum
