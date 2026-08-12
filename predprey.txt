@@ -1,1 +1,0 @@
-The csv file is the data used in the realPredPrey file, and the predprey.m file is using simulated data from ode45
